@@ -72,6 +72,6 @@ backend api
     server webserver1 $CRC_IP:6443 check
 EOF
 
-header_text "Starting haproxy"
-sudo systemctl start haproxy
+header_text "Restarting haproxy"
+sudo systemctl restart haproxy
 
