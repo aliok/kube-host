@@ -12,6 +12,9 @@ Start in guest:
 
 ```
 start-kind.sh
+
+# OR
+start-kind-multinode.sh
 ```
 
 Dashboard doesn't work. See https://stackoverflow.com/questions/53957413/how-to-access-kubernetes-dashboard-from-outside-network
