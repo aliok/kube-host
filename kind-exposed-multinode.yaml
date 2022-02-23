@@ -15,3 +15,18 @@ nodes:
     # optional: set the protocol to one of TCP, UDP, SCTP.
     # TCP is the default
     protocol: TCP
+- role: worker
+  extraPortMappings:
+  - containerPort: 8080
+    hostPort: 18081
+    protocol: TCP
+- role: worker
+  extraPortMappings:
+  - containerPort: 8080
+    hostPort: 18082
+    protocol: TCP
+- role: worker
+  extraPortMappings:
+  - containerPort: 8080
+    hostPort: 18083
+    protocol: TCP
