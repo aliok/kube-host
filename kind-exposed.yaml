@@ -1,7 +1,7 @@
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 networking:
-  apiServerAddress: 192.168.1.151
+  apiServerAddress: 192.168.0.151
   apiServerPort: 16443
 nodes:
 - role: control-plane
@@ -11,7 +11,7 @@ nodes:
     hostPort: 18080
     # optional: set the bind address on the host
     # 0.0.0.0 is the current default
-    # listenAddress: "192.168.1.151"
+    # listenAddress: "192.168.0.151"
     # optional: set the protocol to one of TCP, UDP, SCTP.
     # TCP is the default
     protocol: TCP

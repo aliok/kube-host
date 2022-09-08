@@ -5,7 +5,7 @@ set -e
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 CLUSTER_NAME=lenovo
-KIND_HOST="192.168.1.151"
+KIND_HOST="192.168.0.151"
 
 # Run like DASHBOARD=1 foo.sh if you want the dashboard
 DASHBOARD=${DASHBOARD:-""}
