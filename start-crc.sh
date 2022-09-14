@@ -14,6 +14,11 @@ source ${DIR}/common.sh
 header_text "Deleting current cluster"
 crc delete || true
 
+header_text "Configuring CRC"
+crc config set cpus 8
+crc config set memory 27000
+crc config set kubeadmin-password admin
+
 header_text "Creating a new cluster"
 crc start --pull-secret-file=${DIR}/crc-pull-secret.txt
 
