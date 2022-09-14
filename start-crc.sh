@@ -25,9 +25,9 @@ kubectl config view --minify --flatten --context=crc-admin > ${DIR}/crc.kubeconf
 
 header_text "Setting up HAProxy"
 export CRC_IP=$(crc ip)
-sudo tee /etc/haproxy/haproxy.cfg &>/dev/null <<EOF
+tee sudo /etc/haproxy/haproxy.cfg &>/dev/null <<EOF
 global
-    debug
+    # debug
 
 defaults
     log global
