@@ -16,9 +16,10 @@ crc delete || true
 crc cleanup
 
 header_text "Configuring CRC"
-crc config set cpus 8
-crc config set memory 27000
+crc config set cpus 6 
+crc config set memory 24000
 crc config set kubeadmin-password admin
+crc config set enable-cluster-monitoring true
 crc setup
 
 header_text "Creating a new cluster"
