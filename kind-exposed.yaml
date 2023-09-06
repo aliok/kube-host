@@ -16,3 +16,12 @@ nodes:
     # optional: set the protocol to one of TCP, UDP, SCTP.
     # TCP is the default
     protocol: TCP
+  # Istio ingress gateway port
+  - containerPort: 30106
+    hostPort: 80
+  # Istio ingress gateway port
+  - containerPort: 30233
+    hostPort: 443
+  # Ceph dashboard
+  - containerPort: 30107
+    hostPort: 30107
