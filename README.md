@@ -8,6 +8,8 @@ To be placed at `~/host`.
 
 ## kind
 
+Need at least 0.17
+
 Start in guest:
 
 ```

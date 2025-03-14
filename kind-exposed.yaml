@@ -5,7 +5,7 @@ networking:
   apiServerPort: 16443
 nodes:
 - role: control-plane
-  image: kindest/node:v1.25.3@sha256:f52781bc0d7a19fb6c405c2af83abfeb311f130707a0e219175677e366cc45d1
+  image: kindest/node:v1.32.2@sha256:f226345927d7e348497136874b6d207e0b32cc52154ad8323129352923a3142f 
   # port forward 8000 on the host to 80 on this node
   extraPortMappings:
   - containerPort: 8080
