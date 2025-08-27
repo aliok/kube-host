@@ -26,9 +26,9 @@ nodes:
   - containerPort: 30107
     hostPort: 30107
   # Kourier ingress gateway port
-  - containerPort: 30465 
-    hostPort: 30465 
+  - containerPort: 31080
+    hostPort: 31080
     protocol: TCP
-  - containerPort: 32070
-    hostPort: 32070
+  - containerPort: 31443
+    hostPort: 31443
     protocol: TCP
