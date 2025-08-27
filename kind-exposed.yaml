@@ -25,3 +25,10 @@ nodes:
   # Ceph dashboard
   - containerPort: 30107
     hostPort: 30107
+  # Kourier ingress gateway port
+  - containerPort: 31080
+    hostPort: 31080 
+    protocol: TCP
+  - containerPort: 31443 
+    hostPort: 31443 
+    protocol: TCP
